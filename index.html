@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Michael Flourish Quiz</title>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="assets/images/logo.png" alt="Logo" height="50">
+                <span class="ml-3 has-text-weight-bold is-size-4">Quiz Game</span>
+            </a>
+            <!-- Mobile menu toggle -->
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container small-container mt-5">
+        <!-- Progress Bar -->
+        <progress class="progress is-info" value="0" max="100"></progress>
+        
+        <!-- Quiz Box -->
+        <div class="box quiz-container">
+            <h2 id="question" class="title is-4">Question text</h2>
+            <div class="options">
+                <button class="button is-link is-fullwidth option">Option 1</button>
+                <button class="button is-link is-fullwidth option">Option 2</button>
+                <button class="button is-link is-fullwidth option">Option 3</button>
+                <button class="button is-link is-fullwidth option">Option 4</button>
+            </div>
+            <button id="next-btn" class="button is-success is-fullwidth mt-4">Next Question</button>
+        </div>
+    </div>
+
+    <!-- Result Modal -->
+    <div class="modal" id="resultModal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Quiz Results</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <p id="resultText"></p>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success" id="restart-btn">Restart Quiz</button>
+            </footer>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

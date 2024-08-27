@@ -1,0 +1,202 @@
+[
+    {
+        "question": "What is the capital of France?",
+        "options": ["Berlin", "Madrid", "Paris", "Lisbon"],
+        "answer": "Paris"
+    },
+    {
+        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "options": ["Harper Lee", "J.K. Rowling", "Ernest Hemingway", "F. Scott Fitzgerald"],
+        "answer": "Harper Lee"
+    },
+    {
+        "question": "What is the smallest planet in our solar system?",
+        "options": ["Venus", "Mars", "Mercury", "Earth"],
+        "answer": "Mercury"
+    },
+    {
+        "question": "Which element has the chemical symbol 'O'?",
+        "options": ["Oxygen", "Gold", "Osmium", "Oganesson"],
+        "answer": "Oxygen"
+    },
+    {
+        "question": "What is the hardest natural substance on Earth?",
+        "options": ["Gold", "Iron", "Diamond", "Quartz"],
+        "answer": "Diamond"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+        "answer": "Mars"
+    },
+    {
+        "question": "Who painted the Mona Lisa?",
+        "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
+        "answer": "Leonardo da Vinci"
+    },
+    {
+        "question": "What is the capital city of Japan?",
+        "options": ["Kyoto", "Osaka", "Tokyo", "Nagoya"],
+        "answer": "Tokyo"
+    },
+    {
+        "question": "Which gas do plants absorb from the atmosphere?",
+        "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+        "answer": "Carbon Dioxide"
+    },
+    {
+        "question": "What is the largest mammal in the world?",
+        "options": ["Elephant", "Blue Whale", "Giraffe", "Rhino"],
+        "answer": "Blue Whale"
+    },
+    {
+        "question": "What is the largest ocean on Earth?",
+        "options": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"],
+        "answer": "Pacific Ocean"
+    },
+    {
+        "question": "What is the chemical symbol for water?",
+        "options": ["HO", "H2O", "O2H", "OH2"],
+        "answer": "H2O"
+    },
+    {
+        "question": "Who was the first President of the United States?",
+        "options": ["Abraham Lincoln", "George Washington", "Thomas Jefferson", "John Adams"],
+        "answer": "George Washington"
+    },
+    {
+        "question": "What is the capital of Italy?",
+        "options": ["Rome", "Milan", "Venice", "Florence"],
+        "answer": "Rome"
+    },
+    {
+        "question": "Which planet is closest to the sun?",
+        "options": ["Earth", "Venus", "Mercury", "Mars"],
+        "answer": "Mercury"
+    },
+    {
+        "question": "What is the largest continent?",
+        "options": ["Africa", "Asia", "Europe", "North America"],
+        "answer": "Asia"
+    },
+    {
+        "question": "What is the tallest mountain in the world?",
+        "options": ["Mount Kilimanjaro", "Mount Everest", "K2", "Denali"],
+        "answer": "Mount Everest"
+    },
+    {
+        "question": "Who discovered penicillin?",
+        "options": ["Marie Curie", "Alexander Fleming", "Louis Pasteur", "Isaac Newton"],
+        "answer": "Alexander Fleming"
+    },
+    {
+        "question": "Which year did World War I begin?",
+        "options": ["1912", "1914", "1916", "1918"],
+        "answer": "1914"
+    },
+    {
+        "question": "What is the longest river in the world?",
+        "options": ["Amazon River", "Nile River", "Yangtze River", "Mississippi River"],
+        "answer": "Nile River"
+    },
+    {
+        "question": "What is the smallest country in the world?",
+        "options": ["Monaco", "San Marino", "Vatican City", "Liechtenstein"],
+        "answer": "Vatican City"
+    },
+    {
+        "question": "Who wrote '1984'?",
+        "options": ["George Orwell", "Aldous Huxley", "Ray Bradbury", "Jules Verne"],
+        "answer": "George Orwell"
+    },
+    {
+        "question": "What is the capital of Australia?",
+        "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+        "answer": "Canberra"
+    },
+    {
+        "question": "Which element has the atomic number 1?",
+        "options": ["Helium", "Oxygen", "Hydrogen", "Nitrogen"],
+        "answer": "Hydrogen"
+    },
+    {
+        "question": "What is the square root of 144?",
+        "options": ["10", "11", "12", "13"],
+        "answer": "12"
+    },
+    {
+        "question": "Who was the first man to walk on the moon?",
+        "options": ["Buzz Aldrin", "Yuri Gagarin", "Michael Collins", "Neil Armstrong"],
+        "answer": "Neil Armstrong"
+    },
+    {
+        "question": "What is the largest desert in the world?",
+        "options": ["Sahara Desert", "Gobi Desert", "Arabian Desert", "Antarctic Desert"],
+        "answer": "Antarctic Desert"
+    },
+    {
+        "question": "Which planet has the most moons?",
+        "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+        "answer": "Jupiter"
+    },
+    {
+        "question": "What is the capital of Canada?",
+        "options": ["Toronto", "Vancouver", "Montreal", "Ottawa"],
+        "answer": "Ottawa"
+    },
+    {
+        "question": "Who wrote the play 'Romeo and Juliet'?",
+        "options": ["Christopher Marlowe", "Ben Jonson", "William Shakespeare", "John Milton"],
+        "answer": "William Shakespeare"
+    },
+    {
+        "question": "What is the speed of light?",
+        "options": ["299,792 km/s", "300,000 km/s", "299,792 m/s", "300,000 m/s"],
+        "answer": "299,792 km/s"
+    },
+    {
+        "question": "Which country is known as the Land of the Rising Sun?",
+        "options": ["China", "Japan", "South Korea", "Thailand"],
+        "answer": "Japan"
+    },
+    {
+        "question": "What is the primary ingredient in hummus?",
+        "options": ["Chickpeas", "Lentils", "Beans", "Peas"],
+        "answer": "Chickpeas"
+    },
+    {
+        "question": "Who painted the Sistine Chapel ceiling?",
+        "options": ["Leonardo da Vinci", "Michelangelo", "Raphael", "Donatello"],
+        "answer": "Michelangelo"
+    },
+    {
+        "question": "What is the most widely spoken language in the world?",
+        "options": ["English", "Mandarin", "Spanish", "Hindi"],
+        "answer": "Mandarin"
+    },
+    {
+        "question": "What is the largest organ in the human body?",
+        "options": ["Heart", "Liver", "Skin", "Brain"],
+        "answer": "Skin"
+    },
+    {
+        "question": "Which ocean is the Bermuda Triangle located in?",
+        "options": ["Atlantic Ocean", "Pacific Ocean", "Indian Ocean", "Southern Ocean"],
+        "answer": "Atlantic Ocean"
+    },
+    {
+        "question": "Who was the first woman to win a Nobel Prize?",
+        "options": ["Marie Curie", "Florence Nightingale", "Mother Teresa", "Rosalind Franklin"],
+        "answer": "Marie Curie"
+    },
+    {
+        "question": "Which country hosted the 2016 Summer Olympics?",
+        "options": ["China", "Brazil", "UK", "Russia"],
+        "answer": "Brazil"
+    },
+    {
+        "question": "What is the main ingredient in guacamole?",
+        "options": ["Tomato", "Onion", "Avocado", "Lime"],
+        "answer": "Avocado"
+    }
+]
