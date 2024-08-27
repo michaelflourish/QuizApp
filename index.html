@@ -30,6 +30,9 @@
     <div class="container small-container mt-5">
         <!-- Progress Bar -->
         <progress class="progress is-info" value="0" max="100"></progress>
+
+        <!--Timer-->
+        <div id="timer" class="has-text-danger is-size-4 mb-4"></div>
         
         <!-- Quiz Box -->
         <div class="box quiz-container">
@@ -40,11 +43,9 @@
                 <button class="button is-link is-fullwidth option">Option 3</button>
                 <button class="button is-link is-fullwidth option">Option 4</button>
             </div>
-            <button id="next-btn" class="button is-success is-fullwidth mt-4">Next Question</button>
         </div>
     </div>
 
-    <!-- Result Modal -->
     <div class="modal" id="resultModal">
         <div class="modal-background"></div>
         <div class="modal-card">
@@ -61,7 +62,6 @@
         </div>
     </div>
 
-    <!-- JavaScript -->
     <script src="app.js"></script>
 </body>
 </html>

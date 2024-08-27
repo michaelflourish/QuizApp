@@ -1,16 +1,18 @@
 let questions = [];
 let currentQuestionIndex = 0;
 let score = 0;
+let timerInterval;
+const questionTime = 10; 
+const pointsPerQuestion = 2; 
 
 const questionElement = document.getElementById('question');
 const optionsElements = document.querySelectorAll('.option');
-const nextButton = document.getElementById('next-btn');
 const progressBar = document.querySelector('progress');
 const resultModal = document.getElementById('resultModal');
 const resultText = document.getElementById('resultText');
 const restartButton = document.getElementById('restart-btn');
+const timerElement = document.getElementById('timer');
 
-// Fetch questions from the JSON file
 fetch('questions.json')
     .then(response => response.json())
     .then(data => {
@@ -20,7 +22,7 @@ fetch('questions.json')
     .catch(error => console.error('Error loading questions:', error));
 
 function startQuiz() {
-    shuffle(questions); // Shuffle the questions before starting
+    shuffle(questions); 
     showQuestion(questions[currentQuestionIndex]);
     updateProgressBar();
 }
@@ -32,40 +34,38 @@ function showQuestion(question) {
         button.classList.remove('is-success', 'is-danger');
         button.addEventListener('click', selectOption);
     });
+    resetTimer(); 
 }
 
-
 function selectOption(event) {
+    clearInterval(timerInterval); 
+
     const selectedOption = event.target.textContent;
     const correctAnswer = questions[currentQuestionIndex].answer;
 
     if (selectedOption === correctAnswer) {
-        score++;
-        event.target.classList.add('is-success');
+        score += pointsPerQuestion; 
+        event.target.classList.add('is-success'); 
     } else {
-        event.target.classList.add('is-danger');
+        event.target.classList.add('is-danger'); 
     }
 
     optionsElements.forEach(button => {
         if (button.textContent === correctAnswer) {
-            button.classList.add('is-success');
+            button.classList.add('is-success'); 
         }
-        button.removeEventListener('click', selectOption);
+        button.removeEventListener('click', selectOption); 
     });
 
     disableOptions();
 
-    nextButton.disabled = true;
-
     setTimeout(() => {
-        nextButton.disabled = false;
+        nextQuestion();
     }, 2000);
 }
 
-
 function disableOptions() {
     optionsElements.forEach(button => {
-        button.removeEventListener('click', selectOption);
         button.style.cursor = 'default';
     });
 }
@@ -94,19 +94,35 @@ function updateProgressBar() {
 }
 
 function showResults() {
-    resultText.textContent = `You scored ${score} out of ${questions.length}!`;
+    clearInterval(timerInterval); 
+    resultText.textContent = `You scored ${score} out of ${questions.length * pointsPerQuestion} points!`; // Show total points
     resultModal.classList.add('is-active');
 }
 
-nextButton.addEventListener('click', nextQuestion);
+function startTimer() {
+    let timeLeft = questionTime;
+    timerElement.textContent = `Time: ${timeLeft}s`;
 
-restartButton.addEventListener('click', () => location.reload());
+    timerInterval = setInterval(() => {
+        timeLeft--;
+        timerElement.textContent = `Time: ${timeLeft}s`;
 
-document.querySelector('.delete').addEventListener('click', () => {
-    resultModal.classList.remove('is-active');
-});
+        if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            selectOptionAutomatically(); 
+        }
+    }, 1000);
+}
 
-// Shuffle function (optional)
+function resetTimer() {
+    clearInterval(timerInterval); 
+    startTimer(); 
+}
+
+function selectOptionAutomatically() {
+    optionsElements[0].click();
+}
+
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -114,3 +130,9 @@ function shuffle(array) {
     }
     return array;
 }
+
+restartButton.addEventListener('click', () => location.reload());
+
+document.querySelector('.delete').addEventListener('click', () => {
+    resultModal.classList.remove('is-active');
+});
